@@ -1,0 +1,29 @@
+{
+  "name": "chakecom",
+  "version": "1.0.0",
+  "description": "The Backend Server",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borhanrahi/chakecom.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Borhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borhanrahi/chakecom/issues"
+  },
+  "homepage": "https://github.com/borhanrahi/chakecom#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.0"
+  }
+}
