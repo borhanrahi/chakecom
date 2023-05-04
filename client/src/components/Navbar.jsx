@@ -15,7 +15,6 @@ import { Link as ReactLink } from "react-router-dom";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { GiTechnoHeart } from "react-icons/gi";
 import { useColorMode } from "@chakra-ui/react";
-import App from "./../App";
 
 const links = [
   { linkName: "Products", path: "/products" },
@@ -62,6 +61,11 @@ const Navbar = () => {
             </Flex>
           </Link>
           <HStack spacing={8} alignItems={"center"}>
+            {links.map((link) => (
+              <NavLink key={link.linkName} path={link.path}>
+                {link.linkName}
+              </NavLink>
+            ))}
             <HStack
               as={"nav"}
               spacing={4}
